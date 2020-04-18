@@ -10,6 +10,7 @@ This repository contains code and report for "Capstone Project - Arvato Customer
 - [Technical Overview](#technicaloverview)
 - [Requirements](#requirements)
 - [Results](#results)
+- [Blog](#blog)
 
 ***
 
@@ -64,3 +65,6 @@ All of the requirements are given in requirements.txt. To install Run: `pip inst
 ## Results
 
 The results have been clearly documented in the Jupyter Notebook. Please refer [Arvato Project Workbook.ipynb](https://github.com/alihussainia/Project_Arvato/blob/master/Arvato%20Project%20Workbook.ipynb).
+
+<a id='blog'></a>
+Please refer to [link](https://arvato.netlify.app/)
