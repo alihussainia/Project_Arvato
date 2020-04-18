@@ -64,4 +64,4 @@ All of the requirements are given in requirements.txt. To install Run: `pip inst
 <a id='results'></a>
 ## Results
 
-The results have been clearly documented in the Jupyter Notebook. Please refer [Arvato Project Workbook.ipynb](https://github.com/pranaymodukuru/Bertelsmann-Arvato-customer-segmentation/blob/master/Arvato%20Project%20Workbook.ipynb).
+The results have been clearly documented in the Jupyter Notebook. Please refer [Arvato Project Workbook.ipynb](https://github.com/alihussainia/Project_Arvato/blob/master/Arvato%20Project%20Workbook.ipynb).
