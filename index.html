@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Post - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Capstone Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">Arvato Customer Segmentation Project Report</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          by
+          <a href="#">Muhammad Ali</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Posted on April 18, 2020</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="assets/imgs/intro.png" alt="">
+
+        <hr>
+
+        <h2>Project Overview</h2>
+        <br>
+        <h4>Domain Background</h4>
+
+        <!-- Post Content -->
+        <p class="lead">Arvato is a services company that provides financial services, Information Technology (IT) services and Supply Chain
+            Management (SCM) solutions for business customers on a global scale. It develops and implements innovative
+            solutions with a focus on automation and data analytics. Arvato’s customers come from a wide range of industries
+            such as insurance companies, e-commerce, energy providers, IT and Internet providers [1]. Also, Arvato is wholly
+            owned by Bertelsmann, which is a media, services and education company [2].</p>
+
+        <p>Arvato is helping its customers get valuable insights from data in order to make business decisions. Customer centric
+            marketing is one of the growing fields. Identifying hidden patterns and customer behavior from the data is providing
+            valuable insights for the companies operating in customer centric marketing. Data Science and Machine Learning are
+            immensely used now a days to fulfil business goals and to satisfy customers.</p>
+
+        <p>In this project, Arvato is helping a Mail-order company, which sells organic products in Germany, to understand its
+            customers segments in order to identify next probable customers. The existing customer data and the demographic
+            data of population in Germany are to be studied to understand different customer segments, and then building a system
+            to make predictions on whether a person will be a customer or not based on the demographic data.</p>
+        <br>
+        <h4>Dataset and Inputs</h4>
+        <br>
+        <p>There are four data files associated with this project:</p>
+        <ul>
+            <li>Udacity_AZDIAS_052018.csv: Demographics data for the general population of Germany; 891 211 persons
+                (rows) x 366 features (columns).
+                
+            </li>
+            <li>
+                Udacity_CUSTOMERS_052018.csv: Demographics data for customers of a mail-order company; 191 652
+persons (rows) x 369 features (columns).
+
+            </li>
+            <li>
+                • Udacity_MAILOUT_052018_TRAIN.csv: Demographics data for individuals who were targets of a marketing
+campaign; 42 982 persons (rows) x 367 (columns).
+
+            </li>
+            <li>
+                Udacity_MAILOUT_052018_TEST.csv: Demographics data for individuals who were targets of a marketing
+campaign; 42 833 persons (rows) x 366 (columns).
+
+            </li>
+        </ul>
+        <p>Additionally, 2 metadata files have been provided to give attribute information:</p>
+        <ul>
+            <li>DIAS Information Levels - Attributes 2017.xlsx: top-level list of attributes and descriptions, organized by
+                informational category
+                </li>
+
+            <li>DIAS Attributes - Values 2017.xlsx: detailed mapping of data values for each feature in alphabetical order</li>
+        </ul>
+        <br>
+        <p>All the files associated with the project have been provided by Arvato in the context of Machine Learning Nanodegree Program for analysis and customer segmentation purposes. The four csv files are the demographic data files, in which each row represents demographics of a single person. Each row also includes additional information about their household, building and neighborhood in addition to their demographics. Customers data has three additional columns indicating their specifics with regards to the mail order company. The Train and Test data have been provided to evaluate supervised learning algorithms.</p>
+        <br>
+        <h4>Solution Statement</h4>
+        <br>
+        <p>In the first part of the project, the task is to identify any customer segments present in the provided dataset and Match these segments with the segments of population present in the general population dataset.</p>
+        <ul>
+            <li>In the first step, the dataset will be explored to examine if there are any missing values or mis recorded values in the data and fix them. Also, any categorical features need to be re encoded into numerical features with the help of Label encoders. Finally, the data will be scaled in order to ensure no single feature will have higher weights the later steps.</li>
+            <li>The second step is to identify the minimum number of features that would be sufficient to explain the dataset. Since there are 366 features that represent a single person and not all the features will be important in forming the segments. A dimensionality reduction technique like Principal Component Analysis (PCA) can be used here to identify minimum number of features which explain the variation in the dataset.</li>
+            <li>The third step is to segment the general population and the customers into different segments based on the selected features with the help of unsupervised learning algorithm. K-means clustering is a good choice for this step as this algorithm tries to assign each data point to a cluster based on the distance from a cluster center.</li>
+        </ul>
+        <br>
+        <p>In the second part of the project, the task is to predict whether the mail order company can acquire a customer.</p>
+        <ul>
+            <li>In the first step, the data is pre-processed (the first two steps of the first part will be done again on train and test data).</li>
+            <li>In the second step a supervised learning algorithm will be trained and evaluated on the pre-processed training data.</li>
+            <li>In the last step, the trained model will be used to make predictions on the test data provided</li>
+            <li>Proposed algorithms for supervised learning.<ul>
+                <li>Logistic Regression – A simple binary classification algorithm</li>
+                <li>Decision Tree Classifier – A tree-based algorithm which uses rule-based approach for classification</li>
+                <li>Random Forest Classifier and XG Boost Classifier can also be used since they are derived from the decision trees algorithm</li>
+            </ul></li>
+        
+        
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+    
+      
+
+       
+
+      
+
+      
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Data Science Nano Degree Capstone Project 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
