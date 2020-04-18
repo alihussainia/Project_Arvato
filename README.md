@@ -69,5 +69,5 @@ The results have been clearly documented in the Jupyter Notebook. Please refer [
 
 
 <a id='blog'></a>
-##Blog
+## Blog
 Please refer to [Blog's Link](https://arvato.netlify.app/)
